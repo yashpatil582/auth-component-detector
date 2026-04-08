@@ -52,7 +52,10 @@ async def scrape(request: ScrapeRequest):
     except RuntimeError as e:
         raise HTTPException(status_code=422, detail=str(e))
     except Exception as e:
+        msg = str(e)
+        if "Playwright" in msg or "BrowserType" in msg or "chromium" in msg.lower():
+            msg = "JavaScript rendering is not available on this server. Try disabling the JS rendering option, or run the app locally with Playwright installed."
         raise HTTPException(
-            status_code=500,
-            detail=f"Unexpected error scraping {url}: {str(e)}",
+            status_code=422,
+            detail=msg,
         )

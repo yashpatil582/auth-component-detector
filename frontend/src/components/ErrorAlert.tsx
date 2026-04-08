@@ -5,7 +5,7 @@ interface Props {
 
 export default function ErrorAlert({ message, onDismiss }: Props) {
   return (
-    <div className="bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 flex items-start gap-3">
+    <div className="bg-red-50 border border-red-200 text-red-800 rounded-lg px-4 py-3 flex items-start gap-3 w-full overflow-hidden">
       <svg className="w-5 h-5 text-red-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
         <path
           fillRule="evenodd"
@@ -13,7 +13,7 @@ export default function ErrorAlert({ message, onDismiss }: Props) {
           clipRule="evenodd"
         />
       </svg>
-      <div className="flex-1 text-sm">{message}</div>
+      <div className="flex-1 text-sm break-words">{message}</div>
       {onDismiss && (
         <button onClick={onDismiss} className="text-red-400 hover:text-red-600 text-lg leading-none">
           &times;
