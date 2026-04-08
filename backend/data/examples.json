@@ -1,0 +1,126 @@
+[
+  {
+    "url": "https://github.com/login",
+    "title": "Sign in to GitHub \u00b7 GitHub",
+    "scraped_at": "2026-04-08T19:44:31.621558Z",
+    "rendering_method": "static",
+    "auth_components": [
+      {
+        "component_type": "login_form",
+        "html_snippet": "<form accept-charset=\"UTF-8\" action=\"/session\" data-turbo=\"false\" method=\"post\">\n <input data-csrf=\"true\" name=\"authenticity_token\" type=\"hidden\" value=\"jfxfG5BvZ26Uo17PIfI2W/nZ7m+O1wDsCOsPNovPpAISxfxDwZnMiPLnBByPoTb85FqP+eS0MfvWSrMD2VDYVg==\"/>\n <div>\n  <input autocomplete=\"off\" class=\"form-control\" id=\"add_account\" name=\"add_account\" type=\"hidden\"/>\n  <label for=\"login_field\">\n   Username or email address\n  </label>\n  <input autocapitalize=\"off\" autocomplete=\"username\" autocorrect=\"off\" autofocus=\"autofocus\" class=\"form-control js-login-field\" id=\"login_field\" name=\"login\" required=\"required\" type=\"text\"/>\n </div>\n <div class=\"position-relative\">\n  <label for=\"password\">\n   Password\n  </label>\n  <input autocomplete=\"current-password\" class=\"form-control form-control js-password-field\" id=\"password\" name=\"password\" required=\"required\" type=\"password\"/>\n  <a class=\"label-link position-absolute top-0 right-0\" href=\"/password_reset\" id=\"forgot-password\">\n   Forgot password?\n  </a>\n  <input name=\"webauthn-conditional\" type=\"hidden\" value=\"undefined\"/>\n  <input class=\"js-support\" name=\"javascript-support\" type=\"hidden\" value=\"unknown\"/>\n  <input class=\"js-webauthn-support\" name=\"webauthn-support\" type=\"hidden\" value=\"unknown\"/>\n  <input class=\"js-webauthn-iuvpaa-support\" name=\"webauthn-iuvpaa-support\" type=\"hidden\" value=\"unknown\"/>\n  <input autocomplete=\"off\" class=\"form-control\" id=\"return_to\" name=\"return_to\" type=\"hidden\" value=\"https://github.com/login\">\n   <input autocomplete=\"off\" class=\"form-control\" id=\"allow_signup\" name=\"allow_signup\" type=\"hidden\">\n    <input autocomplete=\"off\" class=\"form-control\" id=\"client_id\" name=\"client_id\" type=\"hidden\">\n     <input autocomplete=\"off\" class=\"form-control\" id=\"integration\" name=\"integration\" type=\"hidden\">\n      <input class=\"form-control\" hidden=\"hidden\" name=\"required_field_e80a\" type=\"text\"/>\n      <input class=\"form-control\" name=\"timestamp\" type=\"hidden\" value=\"1775677471586\"/>\n      <input class=\"form-control\" name=\"timestamp_secret\" type=\"hidden\" value=\"7d089c4bd32c3950733a9e0be13439e88ea885b3b6e7ccc99fe27ac82820b039\"/>\n     </input>\n    </input>\n   </input>\n  </input>\n </div>\n <div>\n  <input class=\"btn btn-primary btn-block js-sign-in-button\" data-disable-with=\"Signing in\u2026\" data-signin-label=\"Sign in\" data-sso-label=\"Sign in with your identity provider\" development=\"false\" disable-emu-sso=\"false\" name=\"commit\" type=\"submit\" value=\"Sign in\"/>\n </div>\n</form>\n",
+        "selector": "html.html-auth > body.logged-out.env-production > div.logged-out.env-production > div.application-main > main > div.authentication > div.authentication-body.authentication-body--with-form > form",
+        "confidence": 1.0,
+        "attributes": {
+          "action": "/session",
+          "method": "post"
+        }
+      },
+      {
+        "component_type": "forgot_password_link",
+        "html_snippet": "<a class=\"label-link position-absolute top-0 right-0\" href=\"/password_reset\" id=\"forgot-password\">\n Forgot password?\n</a>\n",
+        "selector": "a#forgot-password",
+        "confidence": 0.7,
+        "attributes": {
+          "id": "forgot-password",
+          "class": "label-link position-absolute top-0 right-0",
+          "href": "/password_reset"
+        }
+      }
+    ],
+    "full_page_has_auth": true,
+    "detection_summary": "Found 1 login form, 1 forgot-password link (max confidence: 100%)",
+    "scrape_duration_ms": 392
+  },
+  {
+    "url": "https://parabank.parasoft.com/parabank/index.htm",
+    "title": "ParaBank | Welcome | Online Banking",
+    "scraped_at": "2026-04-08T19:44:31.972858Z",
+    "rendering_method": "static",
+    "auth_components": [
+      {
+        "component_type": "login_form",
+        "html_snippet": "<form action=\"login.htm;jsessionid=E4C67A936EDB9376265A819C9A9DF4E0\" method=\"POST\" name=\"login\">\n <p>\n  <b>\n   Username\n  </b>\n </p>\n <div class=\"login\">\n  <input class=\"input\" name=\"username\" type=\"text\"/>\n </div>\n <p>\n  <b>\n   Password\n  </b>\n </p>\n <div class=\"login\">\n  <input class=\"input\" name=\"password\" type=\"password\"/>\n </div>\n <div class=\"login\">\n  <input class=\"button\" type=\"submit\" value=\"Log In\"/>\n </div>\n</form>\n",
+        "selector": "div#loginPanel > form",
+        "confidence": 1.0,
+        "attributes": {
+          "name": "login",
+          "action": "login.htm;jsessionid=E4C67A936EDB9376265A819C9A9DF4E0",
+          "method": "POST"
+        }
+      },
+      {
+        "component_type": "forgot_password_link",
+        "html_snippet": "<a href=\"lookup.htm;jsessionid=E4C67A936EDB9376265A819C9A9DF4E0\">\n Forgot login info?\n</a>\n",
+        "selector": "div#loginPanel > p > a",
+        "confidence": 0.7,
+        "attributes": {
+          "href": "lookup.htm;jsessionid=E4C67A936EDB9376265A819C9A9DF4E0"
+        }
+      }
+    ],
+    "full_page_has_auth": true,
+    "detection_summary": "Found 1 login form, 1 forgot-password link (max confidence: 100%)",
+    "scrape_duration_ms": 346
+  },
+  {
+    "url": "https://www.saucedemo.com/",
+    "title": "Swag Labs",
+    "scraped_at": "2026-04-08T19:44:35.677632Z",
+    "rendering_method": "javascript",
+    "auth_components": [
+      {
+        "component_type": "login_form",
+        "html_snippet": "<form>\n <div class=\"form_group\">\n  <input autocapitalize=\"none\" autocorrect=\"off\" class=\"input_error form_input\" data-test=\"username\" id=\"user-name\" name=\"user-name\" placeholder=\"Username\" type=\"text\" value=\"\"/>\n </div>\n <div class=\"form_group\">\n  <input autocapitalize=\"none\" autocorrect=\"off\" class=\"input_error form_input\" data-test=\"password\" id=\"password\" name=\"password\" placeholder=\"Password\" type=\"password\" value=\"\"/>\n </div>\n <div class=\"error-message-container\">\n </div>\n <input class=\"submit-button btn_action\" data-test=\"login-button\" id=\"login-button\" name=\"login-button\" type=\"submit\" value=\"Login\"/>\n</form>\n",
+        "selector": "div#login_button_container > div.login-box > form",
+        "confidence": 0.8,
+        "attributes": {}
+      }
+    ],
+    "full_page_has_auth": true,
+    "detection_summary": "Found 1 login form (max confidence: 80%)",
+    "scrape_duration_ms": 3702
+  },
+  {
+    "url": "https://demo.testfire.net/login.jsp",
+    "title": "Altoro Mutual",
+    "scraped_at": "2026-04-08T19:44:35.952494Z",
+    "rendering_method": "static",
+    "auth_components": [
+      {
+        "component_type": "login_form",
+        "html_snippet": "<form action=\"doLogin\" id=\"login\" method=\"post\" name=\"login\" onsubmit=\"return (confirminput(login));\">\n <table>\n  <tr>\n   <td>\n    Username:\n   </td>\n   <td>\n    <input id=\"uid\" name=\"uid\" style=\"width: 150px;\" type=\"text\" value=\"\"/>\n   </td>\n   <td>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    Password:\n   </td>\n   <td>\n    <input id=\"passw\" name=\"passw\" style=\"width: 150px;\" type=\"password\"/>\n   </td>\n  </tr>\n  <tr>\n   <td>\n   </td>\n   <td>\n    <input name=\"btnSubmit\" type=\"submit\" value=\"Login\"/>\n   </td>\n  </tr>\n </table>\n</form>\n",
+        "selector": "form#login",
+        "confidence": 1.0,
+        "attributes": {
+          "id": "login",
+          "name": "login",
+          "action": "doLogin",
+          "method": "post"
+        }
+      }
+    ],
+    "full_page_has_auth": true,
+    "detection_summary": "Found 1 login form (max confidence: 100%)",
+    "scrape_duration_ms": 269
+  },
+  {
+    "url": "https://practicetestautomation.com/practice-test-login/",
+    "title": "Test Login | Practice Test Automation",
+    "scraped_at": "2026-04-08T19:44:36.199598Z",
+    "rendering_method": "static",
+    "auth_components": [
+      {
+        "component_type": "login_form",
+        "html_snippet": "<div id=\"form\">\n <div>\n  <label for=\"username\">\n   Username\n  </label>\n  <input id=\"username\" name=\"username\" type=\"text\"/>\n </div>\n <div>\n  <label for=\"password\">\n   Password\n  </label>\n  <input id=\"password\" name=\"password\" type=\"password\"/>\n </div>\n <button class=\"btn\" id=\"submit\">\n  Submit\n </button>\n</div>\n",
+        "selector": "div#form",
+        "confidence": 0.7999999999999999,
+        "attributes": {
+          "id": "form"
+        }
+      }
+    ],
+    "full_page_has_auth": true,
+    "detection_summary": "Found 1 login form (max confidence: 80%)",
+    "scrape_duration_ms": 238
+  }
+]
