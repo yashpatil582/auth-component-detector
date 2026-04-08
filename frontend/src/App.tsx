@@ -3,9 +3,11 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Examples from "./pages/Examples";
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <div className="min-h-screen bg-gray-50">
         <Header />
         <Routes>
