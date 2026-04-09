@@ -18,7 +18,13 @@ export default function ExampleGrid() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <LoadingSpinner />;
+  if (loading)
+    return (
+      <div className="flex flex-col items-center justify-center py-12 gap-3">
+        <div className="w-10 h-10 border-4 border-gray-200 border-t-emerald-500 rounded-full animate-spin" />
+        <p className="text-sm text-gray-500">Scraping 5 demo sites live...</p>
+      </div>
+    );
   if (error) return <ErrorAlert message={error} />;
   if (examples.length === 0)
     return <p className="text-gray-500 text-sm py-8">No pre-scraped examples available.</p>;
