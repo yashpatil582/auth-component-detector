@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import type { ScrapeResponse } from "../types";
 import { getExamples } from "../api/client";
 import ResultCard from "./ResultCard";
-import LoadingSpinner from "./LoadingSpinner";
 import ErrorAlert from "./ErrorAlert";
 
 export default function ExampleGrid() {
